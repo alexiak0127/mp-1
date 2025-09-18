@@ -3,7 +3,14 @@ let two = document.getElementById("two");
 let output = document.getElementById("output");
 
 function doAdd(){
-    output.innerHTML = String(Number(one.value) + Number(two.value));
+    let result = String(Number(one.value) + Number(two.value));
+    output.innerHTML = String(result);
+    if(result < 0){
+        output.style.color = "red";
+    } else {
+        output.style.color = "#000000";
+        output.style.backgroundColor = "white";
+    }
 }
 
 function doSubtract(){
@@ -18,16 +25,27 @@ function doSubtract(){
 }
 
 function doMultiply(){
-    output.innerHTML = String(Number(one.value) * Number(two.value));
+    let result = String(Number(one.value) * Number(two.value));
+    output.innerHTML = String(result);
+    if(result < 0){
+        output.style.color = "red";
+    } else {
+        output.style.color = "#000000";
+        output.style.backgroundColor = "white";
+    }
 }
 
 function doDivide(){
-    if(Number(two.value) === 0){
-        output.innerHTML = "Cannot divide by zero";
+    let result = String(Number(one.value) / Number(two.value));
+    output.innerHTML = String(result);
+    if(result < 0){
         output.style.color = "red";
     } else {
-        output.innerHTML = String(Number(one.value) / Number(two.value));
+        output.style.color = "#000000";
+        output.style.backgroundColor = "white";
     }
+
+
 }
 
 function doPower(){

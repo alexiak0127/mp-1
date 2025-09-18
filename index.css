@@ -321,7 +321,7 @@ main h4 {
 
 .calculator-buttons button:hover {
     background-color: #F5CAC3;
-    color: #000;
+    color: #000000;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
