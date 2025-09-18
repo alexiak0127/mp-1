@@ -12,7 +12,7 @@ function doSubtract(){
     if(result < 0){
         output.style.color = "red";
     } else {
-        output.style.color = "#333";
+        output.style.color = "#000000";
         output.style.backgroundColor = "white";
     }
 }

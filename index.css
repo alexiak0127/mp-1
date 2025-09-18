@@ -126,7 +126,7 @@ main h4 {
 /* For screens bigger than 750px */
 @media (min-width: 751px) {
     header {
-        text-align: center;
+        text-align: left;
         width: 100%;
     }
     
